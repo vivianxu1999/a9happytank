@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Welcome to Happy Tank!</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/navbar.css" rel="stylesheet">
+	<link href="/css/buttons.css" rel="stylesheet">
+	<link href="/css/home2.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+
+
+<nav class="menu" style="margin:10px; top:79%; left:35%">
+   <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+   <label class="menu-open-button" for="menu-open">
+    <span class="lines line-1"></span>
+    <span class="lines line-2"></span>
+    <span class="lines line-3"></span>
+  </label>
+
+   <a href="/home2" class="menu-item lightblue"> <i class="fa fa-home"></i> </a>
+   <a href="/image2" class="menu-item green"> <i class="fa fa-camera-retro"></i> </a>
+    <a href="/about2" class="menu-item red"> <i class="fa fa-question"></i> </a>
+
+</nav>
+
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ 
+	ga('create', 'UA-159393925-1', 'auto');
+	ga('require', 'GTM-P2CNNRS');
+	ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+</head>
+
+<body>
+
+	<div class="container" id="upload_div" style="margin-top:15px">
+		
+
+	<form id="writeTextFrom" role="form" method="get" action="/writeText2" >
+	    <div id='buttonId' class="form-group" >
+
+	      <textarea rows="10"  placeholder="How are you feeling today?" name="content" id="content"></textarea>
+	    </div>
+	    <input type="submit" id="submitBtn" class="myButton" ></input>
+	</form>
+	
+	<div>
+		<p id="successMsg" style="color:green";></p>
+	</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/writeTextInitialize2.js"></script>
+	
+</body>
+</html>
+
+
