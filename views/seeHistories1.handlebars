@@ -36,13 +36,13 @@
  
 </head>
 
-<body style="margin-top:5px;overflow-y:scroll;padding-top:3px;height:380px">
-	<div class="container" id="upload_div" style="margin-top:5px;overflow-y:scroll;height:600px">
+<body style="margin-top:20px;overflow-y:scroll;padding-top:3px;height:380px">
+	<div class="container" id="upload_div" style="margin-top:5px;overflow-y:scroll;height:478px">
 
 	{{#each histories}}
 
     		<div>
-				<p style="color:purple";>{{content}}</p>
+				<p style="color:orange";>{{content}}</p>
 			</div>
     		<div >
 				<img src="{{imageURL}}" class="img" onerror="this.style.display='none'" >
@@ -59,4 +59,8 @@
 	<script src="/js/seeHistoriesInitialize1.js"></script>
 	
 </body>
+<footer>
+  <div style="position: absolute;top:20px;left:75%" >
+   <a href="/" ><font color="#A43EE3">Click Here to Sign Out</font>
+</a>
 </html>
